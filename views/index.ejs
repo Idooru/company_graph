@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
-    <title><%= title %></title>
+    <title>main page</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body class="flex_sort">
+    <div class="flex_sort">
+      <div id="title_box" class="border_deco flex_sort">
+        <h1>Company Graph</h1>
+      </div>
+    </div>
+    <div id="box_area">
+      <div class="box_item flex_sort">
+        <div class="graph_box border_deco"></div>
+      </div>
+      <div class="box_item flex_sort">
+        <div class="graph_box border_deco"></div>
+      </div>
+      <div class="box_item flex_sort">
+        <div class="graph_box border_deco"></div>
+      </div>
+    </div>
   </body>
 </html>
