@@ -4,7 +4,7 @@ import getPythonData from "../services/get-python-data.js";
 const router = express.Router();
 
 /* GET home page. */
-router.get("/", async (req, res, next) => {
+router.get("/", async (req, res) => {
   const [firstList, secondList, thirdList] =
     await getPythonData("./python/data.py");
   res.render("index", { firstList, secondList, thirdList });
